@@ -8,7 +8,7 @@ WORKDIR /src
 COPY . .
 
 # Build the Hugo site
-RUN ["make", "hugo"]
+RUN ["make", "build"]
 
 # Use an official Apache HTTP Server image to serve the site
 FROM httpd:alpine
