@@ -21,12 +21,12 @@ build: hugo
 run: build
 	cd $(PUBLIC) && python3 -m http.server $(LOCAL_PORT) --bind 0.0.0.0
 
-docker-light-run: build docker-stop
+docker-light: build docker-stop
 	docker rmi -f $(DOCKER_TEST)
 	docker build -f Dockerfile.light --no-cache -t $(DOCKER_TEST) .
 	docker run --name $(DOCKER_TEST) -p $(DOCKER_TEST_PORT):80 -d $(DOCKER_TEST)
 
-docker-heavy-run: docker-stop
+docker-heavy: docker-stop
 	docker rmi -f $(DOCKER_TEST)
 	docker build -f Dockerfile.heavy --no-cache -t $(DOCKER_TEST) .
 	docker run --name $(DOCKER_TEST) -p $(DOCKER_TEST_PORT):80 -d $(DOCKER_TEST)
