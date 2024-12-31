@@ -1,12 +1,14 @@
-<script defer src="https://buttons.github.io/buttons.js"></script>
+<script defer src="/local-resources/buttons.js"></script>
 <script src="{{ "js/simpletree.min.js" | relURL }}"></script>
 <script type='text/javascript' src="{{ "js/docs.js" | relURL }}"></script>
 <script type='text/javascript' src="{{ "js/docs-navigation.js" | relURL }}"></script>
 <script type='text/javascript' src="{{ "js/docs-table-of-contents.js" | relURL }}"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
-<link rel="preconnect" href="https://YOUR_APP_ID-dsn.algolia.net" crossorigin />
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script> -->
+<link rel="stylesheet" href="/local-resources/css-3">
+<script src="/local-resources/js-3"></script>
+<!-- <link rel="preconnect" href="https://YOUR_APP_ID-dsn.algolia.net" crossorigin /> -->
 <script async type='text/javascript' src="{{ "js/docs-search-v3.js" | relURL }}"></script>
 <script type='text/javascript'>
   setTimeout(function () {
@@ -53,8 +55,10 @@
   $(document).on('load', onResizing)
   $(document).on('resize', onResizing)
 </script>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script> -->
+<link rel="stylesheet" href="/local-resources/default.min.css">
+<script src="/local-resources/highlight.min.js"></script>
 <script>
   hljs.initHighlightingOnLoad();
 </script>
