@@ -16,6 +16,8 @@ FROM httpd:alpine
 # Copy the Hugo-generated site from the hugo-builder stage to the Apache document root
 COPY --from=hugo-builder /src/public/ /usr/local/apache2/htdocs/
 
+# COPY ./public/ /usr/local/apache2/htdocs/
+
 # Expose port 80 to access the site
 EXPOSE 80
 

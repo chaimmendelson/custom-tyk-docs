@@ -1,5 +1,6 @@
 tyk-docs/public
-public
+public/
+docker/
 .DS_Store
 .idea/
 *.swp
